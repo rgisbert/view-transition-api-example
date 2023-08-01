@@ -1,11 +1,9 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue';
-import GameDetails from './GameDetails.vue';
 import type { Game } from '../typescript/types';
-import { useActiveComponent, useGamesStore } from '../store';
+import router from '../router';
+import { useGamesStore } from '../store';
 
-const { changeSelectedGame } = useGamesStore();
-const { changeComponent } = useActiveComponent();
 const { id } = defineProps({
     id: {
         type: Number,
@@ -24,10 +22,9 @@ function openStore(url: string) {
     window.open(url, '_blank');
 }
 
-function loadGameDetails(gameId: number) {
-    changeSelectedGame(gameId);
-    changeComponent(GameDetails);
-}
+const loadGameDetails = (gameId: number) => {
+    router.push({ name: 'game:details', params: { id: gameId } });
+};
 </script>
 
 <template>

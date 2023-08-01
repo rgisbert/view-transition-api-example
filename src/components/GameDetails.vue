@@ -1,10 +1,14 @@
 <script setup lang="ts">
-import GamesList from './GamesList.vue';
-import { useActiveComponent, useGamesStore } from '../store';
-const { changeComponent } = useActiveComponent();
-const { getSelectedGame } = useGamesStore();
+import { useRoute } from 'vue-router';
+import router from '../router';
+import { useGamesStore } from '../store';
 
-const game = getSelectedGame();
+const id = Number(useRoute().params.id);
+const game = useGamesStore().getGame(id);
+
+const changeComponent = () => {
+    router.push({ name: 'game:list' });
+};
 </script>
 
 <template>
@@ -14,7 +18,7 @@ const game = getSelectedGame();
     >
         <button
             class="go-back"
-            @click="changeComponent(GamesList)"
+            @click="changeComponent()"
         >
             Volver a la lista
         </button>
@@ -31,6 +35,12 @@ const game = getSelectedGame();
             Tal vez Jack el Guapo o los hermanos Calypso lo han robado, ¡ve a
             buscar en qué cámara lo guardan!
         </p>
+        <button
+            class="go-back"
+            @click="changeComponent()"
+        >
+            Volver a la lista
+        </button>
     </aside>
 </template>
 
