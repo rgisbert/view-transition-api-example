@@ -1,5 +1,8 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { useActiveComponent } from './store';
+const activeComponent = useActiveComponent();
+</script>
 
-<template></template>
-
-<style scoped></style>
+<template>
+    <component :is="activeComponent.component"></component>
+</template>

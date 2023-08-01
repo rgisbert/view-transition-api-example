@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "Borderlands GOTY Edition",
+        "linkImage": "https://cdn.akamai.steamstatic.com/steam/apps/8980/header.jpg",
+        "description": "Carga, Quita el Seguro y Enfréntate a la Locura\n\n¡Prepárate para un auténtico disparate! ¡Juega en el papel de uno de los cuatro mercenarios de gatillo fácil y arrasa con cualquier cosa que se interponga en tu camino\n\nCon su acción adictiva, combate frenético en primera persona, un arsenal masivo, elementos RPG, y co-op para cuatro jugadores*, Borderlands es una experiencia innovadora que desafía todas las convenciones de los shooters actuales. Borderlands te pone en el papel de un mercenario en el desolado planeta sin ley de Pandora, empeñado en localizar una legendaria reserva de poderosa tecnología alienígena conocida como The Vault.",
+        "price": 8.99,
+        "store": "https://store.steampowered.com/app/8980/Borderlands_Game_of_the_Year/"
+    },
+    {
+        "id": 2,
+        "name": "Borderlands 2",
+        "linkImage": "https://cdn.akamai.steamstatic.com/steam/apps/49520/header.jpg",
+        "description": "Una nueva era de disparos y saqueos está a punto de comenzar. Juega como uno de los cuatro nuevos buscadores de la Cámara y enfréntate a legiones de nuevas criaturas, psicópatas y al villano que las controla, Jack el Guapo. Haz nuevos amigos, equípalos con un cillón de armas y pelea a su lado en partidas cooperativas de 4 jugadores, en una implacable búsqueda de venganza y redención a través de un desconocido e impredecible planeta.",
+        "price": 7.49,
+        "store": "https://store.steampowered.com/app/49520/Borderlands_2/"
+    },
+    {
+        "id": 3,
+        "name": "Borderlands 3",
+        "linkImage": "https://cdn.akamai.steamstatic.com/steam/apps/397540/header.jpg",
+        "description": "¡Vuelve el padre de los shooter-looter, con tropecientas mil armas y una aventura caótica! Arrasa a tus enemigos y descubre mundos inéditos con uno de los cuatro nuevos buscacámaras. Juega solo o con amigos para derribar a adversarios increíbles, hacerte con montones de botín y salvar tu hogar de la secta más cruel de la galaxia.",
+        "price": 8.99,
+        "store": "https://store.steampowered.com/app/397540/Borderlands_3/"
+    },
+    {
+        "id": 4,
+        "name": "Borderlands: The Pre-Sequel",
+        "linkImage": "https://cdn.akamai.steamstatic.com/steam/apps/261640/header.jpg",
+        "description": "¡SUMÉRGETE EN EL UNIVERSO DE BORDERLANDS Y PREPÁRATE PARA DISPARAR Y SAQUEAR EN UNA NUEVA AVENTURA QUE TE TRANSPORTARÁ A LA LUNA DE PANDORA EN BORDERLANDS: THE PRE-SEQUEL!\n\nDescubre la historia que hay tras Jack el Guapo, el villano de Borderlands 2, y su ascenso al poder. Situada entre el Borderlands original y Borderlands 2, la precuela de la secuela te ofrece una nueva experiencia de juego en la que disfrutarás de la característica fusión de shooter y juego de rol que ha conquistado ya a tantos jugadores.",
+        "price": 3.99,
+        "store": "https://store.steampowered.com/app/261640/Borderlands_The_PreSequel/"
+    },
+    {
+        "id": 5,
+        "name": "Tales from the Borderlands",
+        "linkImage": "https://cdn.akamai.steamstatic.com/steam/apps/330830/header.jpg",
+        "description": "¡Ha vuelto la aclamada aventura con una historia interactiva y decisiones del universo de Borderlands! Tales from the Borderlands transcurre entre los eventos de Borderlands 2 y Borderlands 3. Seguid a dos narradores poco fiables en una misión llena de codicia pero abocada a la grandeza. La historia cambia dependiendo de las decisiones que toméis para que sea única y tiene un montón de consecuencias imprevistas de todo tipo, desde tronchantes a conmovedoras.",
+        "price": 19.99,
+        "store": "https://store.steampowered.com/app/330830/Tales_from_the_Borderlands/"
+    },
+    {
+        "id": 6,
+        "name": "New Tales from the Borderlands",
+        "linkImage": "https://cdn.akamai.steamstatic.com/steam/apps/1454970/header.jpg",
+        "description": "Enfréntate a los despiadados señores de las empresas en esta aventura narrativa.\n\nEn la metrópolis de Promethea, perpetuamente devastada por la guerra, controlarás a Anu, Octavio y Fran en el peor día de sus vidas. Ayuda a estos tres adorables perdedores en su empeño por cambiar el mundo (y quizá incluso salvarlo). Enfréntate a una invasión planetaria, a un despiadado monstruo de la cámara acorazada y a un capitalista de corazón frío en este emocionante viaje cinematográfico en el que lo que ocurra a continuación dependerá de ti. Conoce a un variopinto elenco de inadaptados, robots asesinos y pistolas parlantes en esta carrera hacia la cima.",
+        "price": 24.99,
+        "store": "https://store.steampowered.com/app/1454970/Nueva_entrega_de_New_Tales_from_the_Borderlands/"
+    }
+]
