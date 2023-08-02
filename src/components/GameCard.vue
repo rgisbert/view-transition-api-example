@@ -3,6 +3,7 @@ import { onMounted, ref } from 'vue';
 import type { Game } from '../typescript/types';
 import router from '../router';
 import { useGamesStore } from '../store';
+import { openStore } from '../utils/generic';
 
 const { id } = defineProps({
     id: {
@@ -17,10 +18,6 @@ onMounted(() => {
     const { getGame } = useGamesStore();
     game.value = getGame(id);
 });
-
-function openStore(url: string) {
-    window.open(url, '_blank');
-}
 
 const loadGameDetails = (gameId: number) => {
     router.push({ name: 'game:details', params: { id: gameId } });
@@ -65,8 +62,8 @@ const loadGameDetails = (gameId: number) => {
 
 <style scoped>
 img {
-    display: block;
     max-width: 100%;
+    height: auto;
 }
 
 .container {

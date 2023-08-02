@@ -3,6 +3,10 @@ import { useGamesStore } from '../store';
 import GameCard from './GameCard.vue';
 
 const { getAllIdGames } = useGamesStore();
+
+document.startViewTransition(() => {
+    console.log('Entra a startViewTransition desde GameList');
+});
 </script>
 
 <template>

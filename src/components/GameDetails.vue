@@ -2,6 +2,7 @@
 import { useRoute } from 'vue-router';
 import router from '../router';
 import { useGamesStore } from '../store';
+import { openStore } from '../utils/generic';
 
 const id = Number(useRoute().params.id);
 const game = useGamesStore().getGame(id);
@@ -9,6 +10,10 @@ const game = useGamesStore().getGame(id);
 const changeComponent = () => {
     router.push({ name: 'game:list' });
 };
+
+document.startViewTransition(() => {
+    console.log('Entra a startViewTransition desde GameDetails');
+});
 </script>
 
 <template>
@@ -28,6 +33,14 @@ const changeComponent = () => {
             :title="game.name"
         />
         <p>{{ game.description }}</p>
+
+        <p>
+            PVP:
+            <span class="price">
+                {{ game.price }}
+            </span>
+        </p>
+        <button @click="openStore(game.store)">Ir a la tienda</button>
     </main>
     <aside v-else>
         <h2>No hay juego</h2>
@@ -54,11 +67,21 @@ const changeComponent = () => {
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
 p {
     text-align: left;
+}
+
+.price {
+    color: red;
+    text-align: right;
+
+    &:after {
+        content: ' €';
+    }
 }
 
 .go-back {
